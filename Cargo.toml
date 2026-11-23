@@ -1,0 +1,16 @@
+[package]
+name = "macan"
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.90"
+description = "Classical CAN for macOS using gs_usb adapters"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+libc = "0.2"
+tempfile = "3"
+
+[build-dependencies]
+cc = "1"
+pkg-config = "0.3"
